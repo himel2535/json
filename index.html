@@ -1,19 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>JSON</title>
-</head>
-<body>
-    <button onclick="loadData()">load data</button>
+
+    <style>
+      #post-container {
+        margin: 50px 50px;
+        margin-top: 50px;
+        max-width: auto;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 20px;      
+        row-gap: 50px;
+      }
+      .post-card{
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 1px 1px gray;
+        height: 100%;
+        
+      }
+      .post-card p{
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>kmdfnkjs</h1>
+    <!-- <button onclick="loadData()">load data</button>
     <br>
     <button onclick="loadPost()">load post</button>
-    <br>
-    <ul id="post-container"></ul>
+    <br> -->
+    <!-- <ol id="post-container"></ol> -->
 
+    <button onclick="loadPost()">load post</button>
 
+    
+    <h1>All Posts</h1>
+    <div id="post-container">
+      
+    </div>
     <script src="learn.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
